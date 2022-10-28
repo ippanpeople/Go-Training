@@ -8,6 +8,10 @@ func main() {
 	card := newCard()
 
 	fmt.Println(card)
+
+	cards := []string{"Ace of Spades", newCard(), newCard()}
+
+	fmt.Println(cards)
 }
 
 func newCard() string {

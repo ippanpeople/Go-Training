@@ -1,34 +1,10 @@
 package main
 
 func main() {
-	// var card string = "Ace of Spades"
-	// card := "Ace of Spades"
-	// card := newCard()
+	cards := newDeck()
 
-	// fmt.Println(card)
+	hand, remainingCards := deal(cards, 5)
+	hand.print()
+	remainingCards.print()
 
-	// cards := []string{"Ace of Spades", newCard()}
-	cards := deck{"Ace of Spades", newCard()}
-	cards = append(cards, "Six of Spades")
-
-	// array
-	// fmt.Println(cards)
-	// fmt.Println(cards[1])
-	// fmt.Println(cards[0:2])
-	// fmt.Println(cards[:2])
-
-	// for loop
-	// for i := 0; i < len(cards); i++ {
-	// 	fmt.Println(cards[i])
-	// }
-
-	// for i, card := range cards {
-	// 	fmt.Println(i, card)
-	// }
-
-	cards.print()
-}
-
-func newCard() string {
-	return "Two of Spades"
 }

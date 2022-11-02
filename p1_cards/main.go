@@ -11,11 +11,13 @@ func main() {
 	cards := deck{"Ace of Spades", newCard()}
 	cards = append(cards, "Six of Spades")
 
+	// array
 	// fmt.Println(cards)
 	// fmt.Println(cards[1])
 	// fmt.Println(cards[0:2])
 	// fmt.Println(cards[:2])
 
+	// for loop
 	// for i := 0; i < len(cards); i++ {
 	// 	fmt.Println(cards[i])
 	// }
